@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="60dp"
+    android:backgroundTint="#EFF3F2"
+    tools:context=".UI.fragment.ProductFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/circle"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="-85dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="-500dp"
+            android:background="@drawable/circle_round"
+            android:backgroundTint="#BAF6F3" />
+
+
+        <ImageView
+            android:id="@+id/kiemngau"
+            android:layout_width="666dp"
+            android:layout_height="466dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="-200dp"
+            android:src="@drawable/kiem_ngau" />
+
+        <LinearLayout
+            android:id="@+id/sale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kiemngau"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-220dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sale"
+                android:fontFamily="@font/robotobold"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FF6868"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%"
+                android:fontFamily="@font/robotobold"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                android:textColor="#FF6868"
+                android:layout_marginStart="40dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Cho tất cả sản phẩm"
+                android:fontFamily="@font/robotobold"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#ABABAB"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/attention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kiemngau"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Đáng chú ý"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyvlerViewProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/attention"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/buys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyvlerViewProduct"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Mua nhiều nhất"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Productbuys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buys"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/allpr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Productbuys"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotobold"
+            android:text="Tất cả sản phẩm"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleAllpr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allpr"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:useDefaultMargins="true" />
+
+    </RelativeLayout>
+</ScrollView>

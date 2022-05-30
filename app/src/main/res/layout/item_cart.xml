@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_marginStart="10dp"
+            />
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/goku"
+            />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/name_cart"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Mô hình DragonBall - Goku sieu vip"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <RatingBar
+                android:id="@+id/AVL_rating"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar" />
+
+
+            <TextView
+                android:id="@+id/cart_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150.000  VND"
+                android:textStyle="bold"
+                android:textColor="#03B4BE"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="#8603B4BE"
+            android:padding="5dp"
+            android:layout_marginEnd="-50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/buttonAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/div1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="-135dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="5dp"
+        android:elevation="10dp"
+        >
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:backgroundTint="@color/AliceBlue"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:backgroundTint="@color/AliceBlue"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/figure_div"
+    android:layout_width="250dp"
+    android:layout_height="280dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/Img_sp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/white"
+        android:elevation="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/goku" />
+
+
+    <LinearLayout
+        android:id="@+id/div1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_round"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="135dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cart_frame"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotobold"
+                android:letterSpacing="0.05"
+                android:maxLines="1"
+                android:text="Mô hình Saitama Chibi - One Punch Man"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_baseline_star_24"
+                    app:tint="#FF9C06" />
+
+                <TextView
+                    android:id="@+id/AVL_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="5.0"
+                    android:textColor="#C7C1C1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Action Figure"
+                    android:textColor="#C7C1C1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="350.000 VND"
+                android:textColor="#03B4BE"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/div1"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginTop="-55dp"
+        android:layout_toRightOf="@+id/div1"
+        android:background="@drawable/triangle"
+        android:backgroundTint="#03B4BE"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/robotobold"
+            android:text="Xem"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/Img_sp"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="-100dp"
+        android:layout_toRightOf="@+id/Img_sp"
+        android:background="@drawable/button_bg_login"
+        android:backgroundTint="@color/BlueLight"
+        android:elevation="40dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:tint="@color/AliceBlue" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Home"
+        app:cnb_iconColor="#03B4BE"
+        app:cnb_backgroundColor = "@color/BlueLight"
+        app:cnb_textColor="#ACACAC"
+        />
+
+    <item
+        android:id="@+id/product"
+        android:icon="@drawable/ic_baseline_view_product"
+        android:title="Product"
+        app:cnb_iconColor="#03B4BE"
+        app:cnb_backgroundColor = "@color/BlueLight"
+        app:cnb_textColor="#ACACAC"
+        />
+
+    <item
+        android:id="@+id/blog"
+        android:icon="@drawable/ic_baseline_pages_24"
+        android:title="Blog"
+        app:cnb_iconColor="#03B4BE"
+        app:cnb_backgroundColor = "@color/BlueLight"
+        app:cnb_textColor="#ACACAC"
+        />
+
+    <item
+        android:id="@+id/user"
+        android:icon="@drawable/ic_baseline_supervised_user_circle_24"
+        android:title="User"
+        app:cnb_iconColor="#03B4BE"
+        app:cnb_backgroundColor = "@color/BlueLight"
+        app:cnb_textColor="#ACACAC"
+        />
+</menu>

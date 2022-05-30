@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- most important is order of layers -->
+
+<!-- Bottom right side 2dp Shadow -->
+<item >
+    <shape android:shape="rectangle">
+        <solid android:color="@color/CadetBlue" />
+        <corners android:radius="100dp"  />
+        <gradient android:startColor="@color/LightSlateGray"
+            android:endColor="@color/AliceBlue" android:angle="270" />
+
+    </shape>
+</item>
+
+<!-- Bottom 2dp Shadow -->
+<item>
+    <shape android:shape="rectangle">
+        <solid android:color="@color/CadetBlue" />
+        <corners android:radius="100dp"  />
+        <gradient android:startColor="@color/LightSlateGray"
+            android:endColor="@color/AliceBlue" android:angle="270" />
+
+    </shape>
+</item>
+
+<!-- White Top color -->
+<item android:bottom="15px" android:right="5px"  >
+    <shape android:shape="rectangle">
+        <solid android:color="#FFFFFF" />
+        <corners android:radius="100dp"  />
+
+    </shape>
+</item>
+</layer-list>

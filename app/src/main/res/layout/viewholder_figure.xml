@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/figure_div"
+    android:layout_width="250dp"
+    android:layout_height="350dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="5dp">
+
+
+    <ImageView
+        android:id="@+id/Img_sp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="@color/white"
+        android:elevation="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/goku" />
+
+
+    <LinearLayout
+        android:id="@+id/div1"
+        android:layout_width="wrap_content"
+        android:layout_height="317dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_round"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/cart_frame"
+            android:backgroundTint="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/robotobold"
+                android:letterSpacing="0.05"
+                android:maxLines="1"
+                android:text="Mô hình Saitama Chibi - One Punch Man"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_baseline_star_24"
+                    app:tint="#FF9C06" />
+
+                <TextView
+                    android:id="@+id/AVL_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="5.0"
+                    android:textColor="#C7C1C1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_baseline_shopping_cart_24"
+                    app:tint="#DEDEDE" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="1k Buy"
+                    android:textColor="#C7C1C1"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/price_sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="350.000 VND"
+                android:textColor="#03B4BE"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/BlueLight"
+        android:padding="4dp"
+        android:background="@drawable/button_bg_login"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:tint="@color/AliceBlue"
+        android:layout_below="@+id/div1"
+        android:layout_marginTop="-60dp"
+        android:layout_marginLeft="-70dp"
+        android:layout_toRightOf="@+id/div1"
+        />
+
+</RelativeLayout>
